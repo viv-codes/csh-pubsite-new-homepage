@@ -3,6 +3,19 @@
     <meta charset="UTF-8"/>
     <head>
         <title>Computer Science House</title>
+
+        <!-- Below is the code for the favicon, which came from the current CSH public site -->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://assets.csh.rit.edu/pubsite/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://assets.csh.rit.edu/pubsite/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://assets.csh.rit.edu/pubsite/favicon/favicon-16x16.png">
+        <link rel="manifest" href="https://assets.csh.rit.edu/pubsite/favicon/site.webmanifest">
+        <link rel="mask-icon" href="https://assets.csh.rit.edu/pubsite/favicon/safari-pinned-tab.svg" color="#B0197E">
+        <link rel="shortcut icon" href="https://assets.csh.rit.edu/pubsite/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#B0197E">
+        <meta name="msapplication-config" content="https://assets.csh.rit.edu/pubsite/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#B0197E">
+        <!-- End of the favicon code that came from the current public site -->
+
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     </head>
     <body>
@@ -67,14 +80,15 @@
                 <!-- The CSS grid area that displays the content (layer 3) -->
                 <div class="banner-text-div">
                 <span class="banner-text">
-                    <p class="banner-h1-text">Welcome to CSH</p>
-                    <p class="banner-body-text">RIT's premier special interest house</p>
-                    <p class="banner-btn"><a class="banner-btn-item" href="https://csh.rit.edu">Get started &#8594;</a></p>
+                    <p class="banner-h1-text">Welcome to Computer Science House</p>
+                    <!-- <p class="banner-body-text">RIT's computing-focused special interest house</p> -->
+                    <p class="banner-btn"><a class="banner-btn-item" href="https://csh.rit.edu">Learn more &#8594;</a></p>
                 </span>
                 </div>
             </section>
             
             <!-- ------------------------------ Big text ------------------------------- -->
+            <!-- ! THIS CAN'T BE IN THE FINAL SITE. EITHER CHANGE THE WORDS OR REMOVE -->
             <h2 style="text-align: center;">Home of <span style="color: #b0197e;">thinkers, makers, doers.</span></h2>
 
             <!-- ----------------------------------------------------------------------- -->
@@ -83,23 +97,23 @@
 
             <!-- TODO: THESE IMAGES ARE FILLERS - REPLACE -->
             <div class="container">
-                <img src="assets/images/arcade.webp" alt="an arcade machine"/>
-                <img src="assets/images/harold.webp" alt="harold's ibutton reader"/>
-                <img src="assets/images/drink.webp" alt="the CSH drink machines"/>
+                <img src="assets/images/arcade.webp" class="padded_image" alt="an arcade machine"/>
+                <img src="assets/images/harold.webp" class="padded_image" alt="harold's ibutton reader"/>
+                <img src="assets/images/drink.webp" class="padded_image" alt="the CSH drink machines"/>
             </div>
 
             <!-- ----------------------------------------------------------------------- -->
             <!--                          Blurb and group photo                          -->
             <!-- ----------------------------------------------------------------------- -->
 
-            <div class="container">
+            <div class="container" style="background-color: #f4f4f6;">
                 <p style="width: 40%; font-size: 0.9em;">Since 1976, Computer Science House has 
                     provided a revolutionary living and learning 
                     environment for its members. With unique 
                     facilities, an emphasis on hands-on learning, 
                     and a strong social atmosphere, CSH helps its 
                     members grow as professionals and more.</p>
-                <img style="width: 40%;" src="assets/images/welcome_back_large.webp" alt="CSH stands together on a grass field"/>
+                <img style="width: 40%; padding-top: 1em; padding-bottom: 1em;" src="assets/images/welcome_back_large.webp" alt="CSH stands together on a grass field"/>
             </div>
 
             <!-- ----------------------------------------------------------------------- -->
@@ -117,15 +131,17 @@
             <!-- ----------------------------------------------------------------------- -->
             <!--                           Statistics display                            -->
             <!-- ----------------------------------------------------------------------- -->
-            <h3>Some numbers about us ...</h3>
-            <div class="container">
-                <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
-                <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
-                <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
-                <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
-                <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
-
+            <div  style="background-color: #f4f4f6;">
+                <h3>Some numbers about us ...</h3>
+                <div class="container">
+                    <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
+                    <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
+                    <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
+                    <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
+                    <div><img src="assets/images/harold.webp" style="width: 180px;"/></div>
+                </div>            
             </div>
+
 
             <!-- ----------------------------------------------------------------------- -->
             <!--                            Social media feed                            -->
@@ -150,13 +166,17 @@
                     More cool words. 
                 </h3>
             </div>
-            
         </main>
+
+        <!--!----------------------------------------------------------------------- -->
+        <!--!                  Add sponsors here in final version                    -->
+        <!--!----------------------------------------------------------------------- -->
 
         <!-- ----------------------------------------------------------------------- -->
         <!--                                 Footer                                  -->
         <!-- ----------------------------------------------------------------------- -->
 
+        <!--  Below is the footer from the current CSH public site. I am using this for consistency when integrating this new homepage with the rest of the site -->
         <footer>
             <div class="footer-top">
                 <div class="container">
