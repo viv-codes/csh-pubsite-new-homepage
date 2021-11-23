@@ -8,6 +8,8 @@
      color: #404b69;
  }
 
+ 
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -355,13 +357,17 @@ footer {
     position: relative;
 }
 
+.width_capped {
+  max-width: 1200px;
+}
+
 /* Banner image - code structure from https://dev.to/billraymond/creating-a-pure-responsive-css-grid-hero-image-or-banner-image-2pej*/
 
 
 .top-banner-section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 350px;
+  grid-template-rows: 500px; /*This is the part that changes the height of the banner image*/
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-content: center;
