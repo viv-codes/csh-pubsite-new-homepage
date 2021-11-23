@@ -358,7 +358,8 @@ footer {
 }
 
 .width_capped {
-  max-width: 1200px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 /* Banner image - code structure from https://dev.to/billraymond/creating-a-pure-responsive-css-grid-hero-image-or-banner-image-2pej*/
