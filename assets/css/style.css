@@ -8,7 +8,9 @@
      color: #404b69;
  }
 
- 
+ .project_image:hover {
+   opacity: 0.75;
+ }
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -37,6 +39,12 @@
   height: 300px;
   justify-content: center;
   align-items: center;
+}
+
+.right-align {
+  display: flex;
+  justify-content: right;
+  align-items: right;
 }
 
  body {
