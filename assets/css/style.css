@@ -12,6 +12,22 @@
    opacity: 0.75;
  }
 
+ .stat_big {
+   color: #b0197e;
+   font-size: 2.5em;
+   font-weight: 600;
+   margin: 0%;
+ }
+
+ .stat_tag {
+   margin: 1em;
+ }
+ 
+ .stat_card {
+   text-align: center;
+   width: 200px;
+ }
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
