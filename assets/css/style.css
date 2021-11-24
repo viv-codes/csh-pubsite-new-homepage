@@ -19,6 +19,10 @@ body {
   background: white;
 }
 
+p {
+  font-size: 1em;
+}
+
 /* ------------------------ Basic column definitions ------------------------ */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -145,6 +149,7 @@ margin: auto;
  /* ?                              Media queries                               */
  /* ?-------------------------------------------------------------------------- */
 
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -177,9 +182,9 @@ margin: auto;
   .logo-grid img {
     margin-top: 1em;
   }
-  html {
+  /* html {
   font-size: calc(1em + 1vmin);
-  }
+  } */
   footer a {
     text-decoration: underline;
   }
@@ -241,9 +246,9 @@ margin: auto;
 }
  
 /* Typography */
-html {
+/* html {
     font-size: calc(1em + 1vmax);
-  }
+  } */
   
 
   
