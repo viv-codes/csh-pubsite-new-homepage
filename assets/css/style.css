@@ -1,3 +1,37 @@
+
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@viv-codes
+viv-codes /
+csh-pubsite-new-homepage
+Public
+
+1
+0
+
+    0
+
+Code
+Issues
+Pull requests
+Actions
+Projects 1
+Wiki
+Security
+Insights
+
+    Settings
+
+csh-pubsite-new-homepage/assets/css/style.css
+@viv-codes
+viv-codes Cleaned up my style.css as much as it can be
+Latest commit afc1972 10 hours ago
+History
+1 contributor
+507 lines (438 sloc) 9.13 KB
 /* -------------------------------------------------------------------------- */
 /*                                 References                                 */
 /* csh-pink = #b0197e */
@@ -17,10 +51,6 @@ body {
   margin: 0;
   position: relative;
   background: white;
-}
-
-p {
-  font-size: 1em;
 }
 
 /* ------------------------ Basic column definitions ------------------------ */
@@ -44,7 +74,6 @@ p {
 
 .centered {
   display: flex;
-  height: 300px;
   justify-content: center;
   align-items: center;
 }
@@ -111,10 +140,17 @@ max-width: 1400px;
 margin: auto;
 }
 
-
-/* ?---------------------------- Triple image set ---------------------------- */
 .padded_image {
   padding: 1em;
+}
+
+/* ?---------------------------- Triple image set ---------------------------- */
+.info_image {
+  padding: 1em;
+}
+
+.info_image:hover {
+  opacity: 0.75;
 }
 
 /* ?----------------------------- Project section ---------------------------- */
@@ -137,7 +173,7 @@ margin: auto;
  }
 
  .stat_tag {
-   margin: 1em;
+   margin: 0.7em;
  }
  
  .stat_card {
@@ -145,57 +181,16 @@ margin: auto;
    width: 200px;
  }
 
- /* ?-------------------------------------------------------------------------- */
- /* ?                              Media queries                               */
- /* ?-------------------------------------------------------------------------- */
-
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
- @media (max-width: 992px) {
-  .logo-grid img {
-    margin-top: 1em;
-  }
-  /* html {
-  font-size: calc(1em + 1vmin);
-  } */
-  footer a {
-    text-decoration: underline;
-  }
-}
-
+ .stat_desc {
+    font-size: 0.6em;
+    font-weight: 600;
+ }
 
 /* !-------------------------------------------------------------------------- */
 /* !                         CSS from other sources                           */
 /* !-------------------------------------------------------------------------- */
 
-/* ---------------------- CSS from the current CSH site - converted from scss --------------------- */
+/* ---------------------- CSS from the current CSH site --------------------- */
 /* This is open source code and is used to ensure that this site matches up with the design standards of the rest of the website */
  .container.spaced {
 	 padding-top: 50px;
@@ -239,18 +234,26 @@ margin: auto;
  .logo-grid img:hover {
 	 opacity: 0.75;
 }
-
+ @media (max-width: 992px) {
+	 .logo-grid img {
+		 margin-top: 1em;
+	}
+}
  a.btn {
 	 font-size: 0.75em;
 	 margin-bottom: 1em;
 }
  
 /* Typography */
-/* html {
+html {
     font-size: calc(1em + 1vmax);
-  } */
+  }
   
-
+  @media(min-width: 992px) {
+    html {
+      font-size: calc(1em + 1vmin);
+    }
+  }
   
   body {
       font-family: 'Poppins', 'Roboto', sans-serif;
@@ -352,7 +355,36 @@ margin: auto;
   display: block;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 
 
 
@@ -406,7 +438,11 @@ footer a:hover {
 footer a.indented {
     padding-left: 30px;
 }
-
+@media (max-width: 992px) {
+    footer a {
+        text-decoration: underline;
+   }
+}
 footer i {
     margin-right: 5px;
 }
