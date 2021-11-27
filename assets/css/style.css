@@ -175,9 +175,6 @@ margin: auto;
  /* !-------------------------------------------------------------------------- */
 
  @media screen and (max-width: 600px) {
-  .left_offset {
-    margin-left: 1em;
-  }
   .dual_container {
     flex-basis: 100%;
     flex-wrap: wrap;
@@ -203,6 +200,10 @@ margin: auto;
  }
 
 @media screen and (max-width: 992px) {
+  .left_offset {
+    margin-left: 0%;
+    text-align: center;
+  }
   .stat_big {
     font-size: 3em;
   }
