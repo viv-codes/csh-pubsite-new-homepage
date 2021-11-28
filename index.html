@@ -189,9 +189,8 @@
             </div>
             <!-- ----------------------------------------------------------------------- -->
             <!--                                Sponsors                                 -->
-            <!-- !I should, can, and will flexbox these -->
             <!-- ----------------------------------------------------------------------- -->
-            <div style="background-color: #f4f4f6;">
+            <div class="width-capped" style="background-color: #f4f4f6;">
                 <h3 class="left_offset">With a special thanks to our sponsors ...</h3>
                 <div class="container" id="homepage-sponsors">
                     <img src="https://assets.csh.rit.edu/pubsite/sponsors/ritLarge.png">
@@ -209,13 +208,12 @@
             <!--                         Final bit before footer                         -->
             <!-- !THIS IS LIKE SUPER BROKEN -->
             <!-- ----------------------------------------------------------------------- -->
-            <div class="container" style="background-image: url('assets/images/bottom_banner_4x.png'); background-size: 100%;">
-                <!-- ! THIS WIDTH IS GOING TO CHANGE (MAYBE) -->
-                <div style="width: 40%; height: 457px;"> 
+            <div id="promo_container" style="background-image: url('assets/images/bottom_banner_4x.png'); background-size: 100%; background-repeat: no-repeat;">
+                <!-- ! NEED TO PREVENT THIS FROM CROPPING THE BOTTOM OF THE BACKGORUND IMAGE. HEIGHT WON"T WORK-->
+                    <div>
                     <div class="right-align">
-                        <h3 style="font-size: 2.3em; color: white; font-family: 'Courier New', Courier, monospace; font-weight: lighter;">Interested?<br>
-                            Join us.<br>
-                            [Button]<br>
+                        <h3 id="promo_text">Interested?<br>
+                            <a href="https://www.csh.rit.edu/membership/intro-process.html">[Join us]</a><br>
                         </h3>                        
                     </div>                    
                 </div>

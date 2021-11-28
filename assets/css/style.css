@@ -182,7 +182,28 @@ margin: auto;
       opacity: 0.75;
   }
   
+  #promo_container {
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+  #promo_text {
+    font-size: 2.6em; 
+    color: white; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: lighter; 
+    padding-right: 2em;
+    text-decoration: none;
+  }
 
+  #promo_text a {
+    text-decoration: none;
+    color: white;
+  }
+  #promo_text a:hover {
+    color: #b0197e;
+  }
 
  /* !-------------------------------------------------------------------------- */
  /* !                             My Media Queries                              */
@@ -217,7 +238,7 @@ margin: auto;
   }
   #homepage-sponsors img {
     width: 100%;
-  }
+  }  
  }
 
 @media screen and (max-width: 992px) {
@@ -235,7 +256,9 @@ margin: auto;
   .quad_image {
     grid-template-columns: 50% 50%;
   }
-
+  #promo_text {
+    font-size: 1.6em;
+  }
 }
 
 /* !-------------------------------------------------------------------------- */
