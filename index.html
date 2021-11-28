@@ -131,10 +131,10 @@
             <!-- ----------------------------------------------------------------------- -->
             <h3 class="left_offset">Things we're working on ...</h3>
             <div class="quad_image">
-                <div><a href="https://ritcoviddashboard.com/totalstudents"><img class="project_image" src="assets/images/covid_dashboard.png" style="width: 100%;"/></a></div>
-                <div><a href="https://calendar.csh.rit.edu"><img class="project_image" src="assets/images/calendar.png" style="width: 100%;"/></a></div>
-                <div><img class="project_image" src="assets/images/covid_dashboard.png" style="width: 100%;"/></div>
-                <div><img class="project_image" src="assets/images/calendar.png" style="width: 100%;"/></div>
+                <div><a href="https://ritcoviddashboard.com/totalstudents"><img class="project_image" src="assets/images/covid_dashboard.png" style="width: 100%;" alt="filler iamge"/></a></div>
+                <div><a href="https://calendar.csh.rit.edu"><img class="project_image" src="assets/images/calendar.png" style="width: 100%;" alt="filler iamge"/></a></div>
+                <div><img class="project_image" src="assets/images/covid_dashboard.png" style="width: 100%;" alt="filler iamge"/></div>
+                <div><img class="project_image" src="assets/images/calendar.png" style="width: 100%;" alt="filler iamge"/></div>
             </div>
 
             <!-- ----------------------------------------------------------------------- -->
@@ -243,7 +243,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center spaced">
-                            <img src="https://assets.csh.rit.edu/pubsite/rit_csh.png" />
+                            <img src="https://assets.csh.rit.edu/pubsite/rit_csh.png" alt="csh logo for pubsite"/>
                         </div>
                         <div class="text-center spaced col-12"><i>Getting more done after 2am than most people do all day.</i></div>
                         <div class="text-md-left col-12 col-lg-4">
@@ -264,29 +264,30 @@
     </body>
 
 
-    <script>
 
-// This top part handles the dropdown and responsive nature of the topnav
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+<script>
 
-// This last part is from the original CSH site and is used to ensure that the footer is sized correctly
-const fixFooterPadding = () => {
-    if ($('footer')) {
-        const footerHeight = $('footer').first().height();
-        $('main').css('padding-bottom', footerHeight + 'px');
+    // This top part handles the dropdown and responsive nature of the topnav
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
     }
-}
+    }
 
-$(document).ready(fixFooterPadding);
-$(window).resize(fixFooterPadding);
+    // This last part is from the original CSH site and is used to ensure that the footer is sized correctly
+    const fixFooterPadding = () => {
+        if ($('footer')) {
+            const footerHeight = $('footer').first().height();
+            $('main').css('padding-bottom', footerHeight + 'px');
+        }
+    }
 
-    </script>
+    $(document).ready(fixFooterPadding);
+    $(window).resize(fixFooterPadding);
+        
+</script>
 
 </html>
