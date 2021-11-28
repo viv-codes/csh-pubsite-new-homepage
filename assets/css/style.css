@@ -172,7 +172,7 @@ margin: auto;
 
  #homepage-sponsors img {
       margin: 15px 0;
-      width: 100%;
+      width: 15%;
       border-radius: 8px;
       box-shadow: 0 2px 15px darken(gray, 20%);
       transition: 0.3s opacity;
@@ -210,6 +210,13 @@ margin: auto;
   }
   .quad_image {
     display: block;
+  }
+  #homepage-sponsors {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  #homepage-sponsors img {
+    width: 100%;
   }
  }
 
