@@ -205,6 +205,82 @@ margin: auto;
     color: #b0197e;
   }
 
+  /*? ----------------------------- contact us form ---------------------------- */
+
+  /* CSS inspired by this demo https://codepen.io/aaroniker/pen/dybMVMB?editors=0100, though had to be heavily modified from the original SCSS  */
+  .form-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+  .form-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+ }
+  .form-container > span, .form-container .field {
+    white-space: nowrap;
+    display: block;
+ }
+  .form-container > span:not(:first-child):not(:last-child), .form-container .field:not(:first-child):not(:last-child) {
+    border-radius: 0;
+ }
+  .form-container > span:first-child, .form-container .field:first-child {
+    border-radius: 6px 0 0 6px;
+ }
+  .form-container > span:last-child, .form-container .field:last-child {
+    border-radius: 0 6px 6px 0;
+ }
+  .form-container > span:not(:first-child), .form-container .field:not(:first-child) {
+    margin-left: -1px;
+ }
+  .form-container .field {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+  .form-container > span {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #99a3ba;
+    background: #eef4ff;
+    border: 1px solid #cdd9ed;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+ }
+  .form-container:focus-within > span {
+    color: #99a3ba;
+    background: #b0197e;
+    border-color: #b0197e;
+ }
+
+ .field {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: #99a3ba;
+  border: 1px solid #cdd9ed;
+  background: #fff;
+  transition: border 0.3s ease;
+}
+.field::placeholder {
+  color: #cbd1dc;
+}
+.field:focus {
+  outline: none;
+  border-color: #b0197e;
+}
+
  /* !-------------------------------------------------------------------------- */
  /* !                             My Media Queries                              */
  /* !-------------------------------------------------------------------------- */
