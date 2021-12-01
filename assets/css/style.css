@@ -205,6 +205,15 @@ margin: auto;
     color: #b0197e;
   }
 
+.joinus {
+  color: white;
+  transition: color 1s;
+}
+
+.joinus:hover {
+  color: #b0197e;
+}
+
   /*? ----------------------------- contact us form ---------------------------- */
 
   /* CSS inspired by this demo https://codepen.io/aaroniker/pen/dybMVMB?editors=0100, though had to be heavily modified from the original SCSS  */
