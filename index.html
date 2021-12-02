@@ -121,7 +121,9 @@
                             facilities, an emphasis on hands-on learning, 
                             and a strong social atmosphere, CSH helps its 
                             members grow as professionals and more. - CSH</p>
-                        <img class="dual_container_item" src="assets/images/welcome_back_large.webp" alt="CSH stands together on a grass field"/>
+                            <!-- ! FOR PRODUCTION SITE USE SOME MEDIA LIBS TO START THIS AFTER A FEW SECONDS OF BEING ON SCREEN, THEN TRANSITION BACK AFTER VIDEO ENDS. ALSO FORCE AUTOPLAY -->
+                        <img onmouseover="showVideo()" id="thumbnail" class="dual_container_item" src="assets/images/welcome_back_large.webp" alt="CSH stands together on a grass field"/>
+                        <video onmouseleave="hideVideo()" controls autoplay id = "video" class="dual_container_item"assets/images/welcome_back_large.webp"><source src="assets/media/csh_pubsite_video.mp4"></video>
                     </div>                
                 </div>                
             </div>
@@ -293,6 +295,22 @@
     } else {
         x.className = "topnav";
     }
+    }
+
+    function showVideo() {
+        var state = document.getElementById("video").style.display;
+            if (state == 'block') {
+                document.getElementById("video").style.display = 'none';
+                document.getElementById("thumbnail").style.display = 'block';
+            } else {
+                document.getElementById("video").style.display = 'block';
+                document.getElementById("thumbnail").style.display = 'none';
+            }
+    }
+
+    function hideVideo() {
+        document.getElementById("video").style.display = 'none';
+        document.getElementById("thumbnail").style.display = 'block';
     }
 
     // This last part is from the original CSH site and is used to ensure that the footer is sized correctly
