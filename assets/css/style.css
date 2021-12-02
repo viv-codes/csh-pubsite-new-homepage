@@ -48,7 +48,6 @@ body {
 .right-align {
   display: flex;
   justify-content: right;
-  align-items: right;
 }
 
 .left_offset {
@@ -174,7 +173,8 @@ margin: auto;
       margin: 15px 0;
       width: 15%;
       border-radius: 8px;
-      box-shadow: 0 2px 15px darken(gray, 20%);
+      /* !UNCOMMENT BELOW FOR FINAL */
+      /* box-shadow: 0 2px 15px darken(gray, 20%); */
       transition: 0.3s opacity;
 
   }
