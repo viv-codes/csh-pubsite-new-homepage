@@ -4,10 +4,11 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
+    <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Since 1976, Computer Science House has provided a revolutionary living and learning environment for its members. With unique facilities, an emphasis on ..">
-    <head>
+    
         <title>Computer Science House</title>
 
         <!-- Below is the code for the favicon, which came from the current CSH public site -->
@@ -32,6 +33,48 @@
         <!--  -->
 
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+
+        <script>
+            // This top part handles the dropdown and responsive nature of the topnav
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+
+            function showVideo() {
+                var state = document.getElementById("video").style.display;
+                    if (state == 'block') {
+                        document.getElementById("video").style.display = 'none';
+                        document.getElementById("thumbnail").style.display = 'block';
+                    } else {
+                        document.getElementById("video").style.display = 'block';
+                        document.getElementById("thumbnail").style.display = 'none';
+                    }
+            }
+
+            function hideVideo() {
+                document.getElementById("video").style.display = 'none';
+                document.getElementById("thumbnail").style.display = 'block';
+            }
+
+            // This last part is from the original CSH site and is used to ensure that the footer is sized correctly
+            const fixFooterPadding = () => {
+                if ($('footer')) {
+                    const footerHeight = $('footer').first().height();
+                    $('main').css('padding-bottom', footerHeight + 'px');
+                }
+            }
+
+            $(document).ready(fixFooterPadding);
+            $(window).resize(fixFooterPadding);
+                
+        </script>
+
     </head>
     <body>
         <header>
@@ -88,10 +131,10 @@
                 </div>
                 <div class="banner-overlay-div"></div>
                 <div class="banner-text-div">
-                <span class="banner-text">
+                <div class="banner-text">
                     <p class="banner-h1-text">Welcome to Computer Science House</p>
                     <p class="banner-btn"><a class="banner-btn-item" href="https://csh.rit.edu">Learn more &#8594;</a></p>
-                </span>
+                </div>
                 </div>
             </section>
             <!--  -->
@@ -123,7 +166,7 @@
                             members grow as professionals and more. - CSH</p>
                             <!-- ! REMOVE THIS VIDEO BEFORE PULL REQUEST TO OFFICIAL CSH REPO -->
                         <img onmouseover="showVideo()" id="thumbnail" class="dual_container_item" src="assets/images/welcome_back_large.webp" alt="CSH stands together on a grass field"/>
-                        <video onmouseleave="hideVideo()" controls autoplay id = "video" class="dual_container_item"assets/images/welcome_back_large.webp"><source src="assets/media/csh_pubsite_video.mp4"></video>
+                        <video onmouseleave="hideVideo()" controls autoplay id = "video" class="dual_container_item"><source src="assets/media/csh_pubsite_video.mp4"></video>
                     </div>                
                 </div>                
             </div>
@@ -285,44 +328,5 @@
 
 
 
-<script>
-    // This top part handles the dropdown and responsive nature of the topnav
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-    }
-
-    function showVideo() {
-        var state = document.getElementById("video").style.display;
-            if (state == 'block') {
-                document.getElementById("video").style.display = 'none';
-                document.getElementById("thumbnail").style.display = 'block';
-            } else {
-                document.getElementById("video").style.display = 'block';
-                document.getElementById("thumbnail").style.display = 'none';
-            }
-    }
-
-    function hideVideo() {
-        document.getElementById("video").style.display = 'none';
-        document.getElementById("thumbnail").style.display = 'block';
-    }
-
-    // This last part is from the original CSH site and is used to ensure that the footer is sized correctly
-    const fixFooterPadding = () => {
-        if ($('footer')) {
-            const footerHeight = $('footer').first().height();
-            $('main').css('padding-bottom', footerHeight + 'px');
-        }
-    }
-
-    $(document).ready(fixFooterPadding);
-    $(window).resize(fixFooterPadding);
-        
-</script>
 
 </html>
